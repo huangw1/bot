@@ -27,3 +27,8 @@ func (cli *CLIAdapter) Send(msg string) error {
 	fmt.Println(msg)
 	return nil
 }
+
+func (*CLIAdapter) Close() error {
+	fmt.Println()
+	return nil
+}
